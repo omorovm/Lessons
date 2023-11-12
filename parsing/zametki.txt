@@ -1,0 +1,17 @@
+при создании проекта мы создаем виртуальное окружение
+python3 -m venv {название вирт. окружения}
+
+чтобы активировать вирт.окружение вводим след команду
+source {назв. вирт. окруж}/bin/acivate 
+
+pip install {название модуля()}
+
+pip install -r {название файла с названиями модулей}
+
+response = requests.get("https://enter.kg/computers/noutbuki_bishkek")
+print(response.text)
+soup = BS(response.text, "lxml")
+print(soup)
+soup.find_all()
+soup.find("div", class = "item")
+soup.get()
